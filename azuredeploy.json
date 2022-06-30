@@ -65,9 +65,9 @@
     "dockerRegistryUsername": {
       "type": "String"
     },
-    "dockerRegistryPassword": {
-      "type": "SecureString"
-    },
+    // "dockerRegistryPassword": {
+    //   "type": "SecureString"
+    // },
     "dockerRegistryStartupCommand": {
       "type": "String"
     }
@@ -109,10 +109,10 @@
               "name": "DOCKER_REGISTRY_SERVER_USERNAME",
               "value": "[parameters('dockerRegistryUsername')]"
             },
-            {
-              "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
-              "value": "[parameters('dockerRegistryPassword')]"
-            },
+            // {
+            //   "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
+            //   "value": "[parameters('dockerRegistryPassword')]"
+            // },
             {
               "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
               "value": "false"

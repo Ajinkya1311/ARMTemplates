@@ -107,9 +107,6 @@
         "value": "cicdcontainer01"
       }
     },
-    "dockerRegistryPassword": {
-      "value": null
-    },
     "dockerRegistryStartupCommand": {
       "value": {
         "type": "String",
