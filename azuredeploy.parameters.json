@@ -1,0 +1,120 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "registryName": {
+      "value": "cicdcontainer01"
+    },
+    "registryLocation": {
+      "value": "centralindia"
+    },
+    "zoneRedundancy": {
+      "value": "disabled"
+    },
+    "registrySku": {
+      "value": "Basic"
+    },
+    "registryApiVersion": {
+      "value": "2020-11-01-preview"
+    },
+    "tags": {
+      "value": {}
+    },
+    "publicNetworkAccess": {
+      "value": "Enabled"
+    },
+    "subscriptionId": {
+      "value": {
+        "type": "String",
+        "value": "60ed8d1a-0cf5-4c6a-afcd-cfdee220d2eb"
+      }
+    },
+    "name": {
+      "value": {
+        "type": "String",
+        "value": "weather-api-v1"
+      }
+    },
+    "location": {
+      "value": {
+        "type": "String",
+        "value": "Central US"
+      }
+    },
+    "hostingPlanName": {
+      "value": {
+        "type": "String",
+        "value": "ASP-initialrg01-90f9"
+      }
+    },
+    "serverFarmResourceGroup": {
+      "value": {
+        "type": "String",
+        "value": "initial-rg-01"
+      }
+    },
+    "alwaysOn": {
+      "value": {
+        "type": "Bool",
+        "value": false
+      }
+    },
+    "sku": {
+      "value": {
+        "type": "String",
+        "value": "Free"
+      }
+    },
+    "skuCode": {
+      "value": {
+        "type": "String",
+        "value": "F1"
+      }
+    },
+    "workerSize": {
+      "value": {
+        "type": "String",
+        "value": "0"
+      }
+    },
+    "workerSizeId": {
+      "value": {
+        "type": "String",
+        "value": "0"
+      }
+    },
+    "numberOfWorkers": {
+      "value": {
+        "type": "String",
+        "value": "1"
+      }
+    },
+    "linuxFxVersion": {
+      "value": {
+        "type": "String",
+        "value": "DOCKER|cicdcontainer01.azurecr.io/cicdcontainerrepo:latest"
+      }
+    },
+    "dockerRegistryUrl": {
+      "value": {
+        "type": "String",
+        "value": "https://cicdcontainer01.azurecr.io"
+      }
+    },
+    "dockerRegistryUsername": {
+      "value": {
+        "type": "String",
+        "value": "cicdcontainer01"
+      }
+    },
+    "dockerRegistryPassword": {
+      "value": null
+    },
+    "dockerRegistryStartupCommand": {
+      "value": {
+        "type": "String",
+        "value": ""
+      }
+    }
+  }
+}
